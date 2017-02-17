@@ -9,7 +9,7 @@ var circle = function() {
     document.getElementsByTagName("BODY")[0].style.background = "hsl(" + h%360 + ", " + (r/Math.min(canvas.width, canvas.height)*100) + "%, " + (r/Math.min(canvas.width, canvas.height)*100) + "%)";
     ctx.fillStyle = "hsl(" + (h+180)%360 + ", " + (r/Math.min(canvas.width, canvas.height)*100) + "%, " + (r/Math.min(canvas.width, canvas.height)*100) +"%)";
     ctx.fill();
-    h+=3;
+    h++;
     window.requestAnimationFrame(circle);
 };
 
