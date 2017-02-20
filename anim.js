@@ -81,6 +81,8 @@ var animate = function() {
 	if (buttons[0] != "#FFFFFF") { buttons[0] = ctx.fillStyle; } 
 	if (buttons[1] != "#FFFFFF") { buttons[1] = ctx.fillStyle; }
 	if (buttons[2] != "#FFFFFF") { buttons[2] = ctx.fillStyle; }
+	if (buttons[0] == "#FFFFFF" || buttons[1] == "#FFFFFF" || buttons[2] == "#FFFFFF") { canvas.style.cursor = "pointer"; }
+	else { canvas.style.cursor = "auto"; }
     };
 
     var checkButtons = function(e) {
