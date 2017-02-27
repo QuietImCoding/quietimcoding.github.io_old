@@ -8,12 +8,12 @@ var animate = function() {
 	ctx.fillRect(0, 0, width, height);
 	for (i = 0; i < circles.length; i++) {
 	    ctx.beginPath();
-	    ctx.arc(circles[i].x, circles[i].y, circles[i].r, 0, Math.PI * 2);
+	    ctx.arc((circles[i].x/widthinit)*width, (circles[i].y/heightinit)*height, circles[i].r, 0, Math.PI * 2);
 	    ctx.fillStyle = circles[i].color;
 	    ctx.fill();
 	    if (isMoving) {
-		circles[i].x += Math.cos(toRadians(i%rid));
-		circles[i].y += Math.sin(toRadians(i%rid));
+		circles[i].x += (width/widthinit) * Math.sin(toRadians(rid+i));
+		circles[i].y += (height/heightinit) * Math.cos(toRadians(rid+i));
 	    }
 	}
 	rid = window.requestAnimationFrame(draw);
@@ -46,7 +46,7 @@ var animate = function() {
     var checkSplit = function(e) {
 	isMoving = true;
 	for (i = 0; i < circles.length; i++) {
-	    if (dist(circles[i].x, circles[i].y, e.offsetX, e.offsetY) < circles[i].r) {
+	    if (dist((circles[i].x/widthinit)*width, (circles[i].y/heightinit)*height, e.offsetX, e.offsetY) < circles[i].r) {
 		var x = circles[i].x;
 		var y = circles[i].y;
 		var r = circles[i].r;
@@ -63,6 +63,8 @@ var animate = function() {
     canvas.height = window.innerHeight;
     height = canvas.height;
     width = canvas.width;
+    var heightinit = height;
+    var widthinit = width;
     window.onresize = function() {
 	canvas.width = window.innerWidth;
 	canvas.height = window.innerHeight;
