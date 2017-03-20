@@ -1,83 +1,18 @@
-<!DOCTYPE html>
-
-<!--
-
-   H     H   IIIIIII          MM         MM      AAA      DDDDDDD      DDDDDDD      Y       Y
-   H     H      I             M M       M M     A   A     D      D     D      D     Y       Y
-   H     H      I             M  M     M  M    A     A    D       D    D       D    Y       Y
-   H     H      I             M   M   M   M   A       A   D        D   D        D    Y     Y
-   HHHHHHH      I             M    M M    M   AAAAAAAAA   D        D   D        D     YYYYY
-   H     H      I             M     M     M   A       A   D        D   D        D       Y
-   H     H      I             M           M   A       A   D        D   D        D       Y
-   H     H      I             M           M   A       A   D       D    D       D        Y
-   H     H   IIIIIII          M           M   A       A   DDDDDDD      DDDDDDDD         Y
-
- -->
-
-<head>
-  <script type="text/javascript" src="script.js"></script>
-  <title>Bubbles</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <style>
-    body {
-    background: black;
-    color: white;
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-    }
-    #svgj {
-    overflow: hidden;
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    }
-    .clear {
-    position: fixed;
-    z-index: 2;
-    left: 50%;
-    margin-left: -6em;
-    top: 90%;
-    background-color: #FFFFFF;
-    color: black;
-    padding: .5em 1em .5em 1em;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 10%;
-    display: inline-block;
-    }
-    .move {
-    position: fixed;
-    z-index: 2;
-    left: 50%;
-    margin-left: 1em;
-    top: 90%;
-    background-color: #FFFFFF;
-    color: black;
-    padding: .5em 1em .5em 1em;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 10%;
-    display: inline-block;
-    }
-    .button:hover {
-    cursor: pointer;
-    }
-    h1 {
-    position: fixed;
-    width: 20em;
-    z-index: 2;
-    font-size: 3em;
-    text-align: center;
-    left: 50%;
-    margin-left: -10em;
-    }
-  </style>
-</head>
-<body>
-  <h1>Bubbles</h1>
-  <svg id="svgj" xmlns="http://www.w3.org/2000/svg"></svg>
-  <a class="button clear" onclick="clearAll()">Clear</a>
-  <a class="button move" onclick="move()">Move</a>
-</body>
+<html>
+  <head>
+    <script src="anim.js"></script>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <img id="bg" alt="space?" src="spaceship.jpg"/>
+    <div id="frozen">
+      <h1>Frozen Journey</h1>
+    </div>
+    <img id="bird" src="bird.gif"/>
+    <img class="bee" src="bee.gif">
+    <img class="bee" src="bee.gif">
+    <img class="bee" src="bee.gif">
+    <img class="bee" src="bee.gif">
+    <audio autoplay="autoplay" id="music" hidden="hidden"> <source src="birdsandbees.mp3" type="audio/mpeg"></audio>
+  </body>
+</html>
