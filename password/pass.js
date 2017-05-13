@@ -8,8 +8,7 @@ var httpRequest = function(site) {
 	    pass.innerHTML = xhttp.responseText;
 	}
     };
-    xhttp.open("GET", "https://qiller.net/" + site);
-    console.log("getting https://qiller.net/" + site);
+    xhttp.open("GET", "https://qiller.net/api/passgen/" + site);
     xhttp.send();
 };
 
