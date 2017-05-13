@@ -8,7 +8,8 @@ var httpRequest = function(site) {
 	    pass.innerHTML = xhttp.responseText;
 	}
     };
-    xhttp.open("GET", "https://qiller.net/" + site);
+    xhttp.open("GET", "http://qiller.net/" + site);
+    console.log("getting http://qiller.net/" + site);
     xhttp.send();
 };
 
