@@ -8,7 +8,7 @@ var httpRequest = function(site) {
 	    pass.innerHTML = xhttp.responseText;
 	}
     };
-    xhttp.open("GET", "http://danwashere.ddns.net/" + site);
+    xhttp.open("GET", "https://www.qiller.net/" + site);
     xhttp.send();
 };
 
