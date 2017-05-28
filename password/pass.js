@@ -18,7 +18,6 @@ var updoot = function() {
     var city = document.getElementById('city');
     var age = document.getElementById('age');
     var pkey = document.getElementById('pkey');
-    var button = document.getElementById('button');
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
@@ -42,5 +41,7 @@ window.onload = function() {
 	    pass.innerHTML = "";
 	}
     }
+    var button = document.getElementById('button');
+    button.onclick = updoot;
     //alert("hello");
 }
