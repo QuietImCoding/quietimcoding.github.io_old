@@ -12,6 +12,18 @@ var httpRequest = function(site) {
     xhttp.send();
 };
 
+var getUpdoot = function() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+	if (this.readyState == 4 && this.status == 200) {
+	    alert('updooted?');
+	    //console.log(xhttp.responseText);
+	}
+    };
+    xhttp.open("GET", "https://qiller.net/api/passgen_updoot/");
+    xhttp.send();
+};
+
 var updoot = function() {
     var lorenz = document.getElementById('lorenz');
     var name = document.getElementById('name');
@@ -33,6 +45,7 @@ var updoot = function() {
 }
 
 window.onload = function() {
+    getUpdoot();
     txtbox = document.getElementById("noot");
     pass = document.getElementById("pass");
     txtbox.oninput = function(e) {
