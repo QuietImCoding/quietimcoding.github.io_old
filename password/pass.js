@@ -19,7 +19,7 @@ var getUpdoot = function() {
 	    console.log(xhttp.responseText);
 	}
     };
-    xhttp.open("GET", "https://qiller.net/api/passgen_updoot");
+    xhttp.open("GET", "https://qiller.net/api/passgen_updoot", false);
     xhttp.send();
 };
 
@@ -38,7 +38,7 @@ var updoot = function() {
     };
     var params = 'city='+city.value+'&name='+name.value+'&age='+age.value+'&pkey='+pkey.value;
     console.log(params);
-    xhttp.open("POST", "https://qiller.net/api/passgen_updoot");
+    xhttp.open("POST", "https://qiller.net/api/passgen_updoot", false);
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhttp.send(params);
 }
