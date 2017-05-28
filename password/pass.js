@@ -45,6 +45,7 @@ var updoot = function() {
 }
 
 window.onload = function() {
+    console.log('updooting');
     getUpdoot();
     txtbox = document.getElementById("noot");
     pass = document.getElementById("pass");
