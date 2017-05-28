@@ -36,7 +36,7 @@ var updoot = function() {
 	    console.log(xhttp.responseText);
 	}
     };
-    var params = 'city='+city.value+'&name='+name.value+'&age='+age.value+'&pkey='+pkey;
+    var params = 'city='+city.value+'&name='+name.value+'&age='+age.value+'&pkey='+pkey.value;
     console.log(params);
     xhttp.open("POST", "https://qiller.net/api/passgen_updoot");
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
