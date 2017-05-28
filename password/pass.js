@@ -16,8 +16,7 @@ var getUpdoot = function() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
-	    alert('updooted?');
-	    //console.log(xhttp.responseText);
+	    console.log(xhttp.responseText);
 	}
     };
     xhttp.open("GET", "https://qiller.net/api/passgen_updoot");
