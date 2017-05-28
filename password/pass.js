@@ -20,7 +20,7 @@ var getUpdoot = function() {
 	    //console.log(xhttp.responseText);
 	}
     };
-    xhttp.open("GET", "https://qiller.net/api/passgen_updoot/");
+    xhttp.open("GET", "https://qiller.net/api/passgen_updoot");
     xhttp.send();
 };
 
