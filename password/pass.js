@@ -26,7 +26,8 @@ var updoot = function() {
 	}
     };
     var params = 'city='+city.value+'&name='+name.value+'&age='+age.value+'&pkey='+pkey;
-    xhttp.open("POST", "https://qiller.net/api/passgen/updoot");
+    console.log(params);
+    xhttp.open("POST", "https://qiller.net/api/passgen_updoot");
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhttp.send(params);
 }
