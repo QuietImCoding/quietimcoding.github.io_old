@@ -1,0 +1,33 @@
+#page1 {
+    height: 100%;
+    background: url('urban.jpg');
+    background-opacity: 0.5;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+#page2 {
+    height: 50%;
+    background: url('road.jpg');
+    background-opacity: 0.5;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.third {
+    height: 33%;
+}
+
+.half {
+    height: 50%;
+}
+
+.quarter {
+    height: 25%;
+}
+
+.heading-index {
+    color: #EEEEEE;
+    text-shadow: 5px 5px 3px #0F0F0F;
+    text-align: center;
+}
