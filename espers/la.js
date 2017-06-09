@@ -22,7 +22,7 @@ window.onload = function() {
 	}
 	var grid = [];
 	
-	if (words.length > maxlen) maxlen = words.length;
+	if (words.length > maxlen) maxlen = Math.floor((words.length+maxlen)/2);
 	
 	for (var i = 0 ; i < maxlen*2; i++) {
 	    var row = []
