@@ -1,5 +1,0 @@
-#bg-index {
-    background: url('urban.jpg');
-    background-opacity: 0.5;
-    background-size: contain;
-}

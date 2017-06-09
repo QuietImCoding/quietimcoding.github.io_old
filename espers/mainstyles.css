@@ -1,16 +1,28 @@
 #page1 {
     height: 100%;
     background: url('urban.jpg');
-    background-opacity: 0.5;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
 }
 
 #page2 {
-    height: 50%;
+    height: 70%;
     background: url('road.jpg');
-    background-opacity: 0.5;
-    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#page3 {
+    height: 100%;
+    background: url('urban.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#page4 {
+    height: 80%;
+    background: url('road.jpg');
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -24,6 +36,10 @@
 
 .quarter {
     height: 25%;
+}
+
+.clean {
+    list-style-type: none;
 }
 
 .heading-index {
