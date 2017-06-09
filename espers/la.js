@@ -21,6 +21,9 @@ window.onload = function() {
 	    if (words[i].length > maxlen) maxlen = words[i].length;
 	}
 	var grid = [];
+	
+	if (words.length > maxlen) maxlen = words.length;
+	
 	for (var i = 0 ; i < maxlen*2; i++) {
 	    var row = []
 	    for (var j = 0; j < maxlen*2; j++) {
