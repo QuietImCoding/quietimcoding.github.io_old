@@ -1,2 +1,5 @@
 # quietimcoding.github.io
-Go away
+
+## This is my personal website
+
+## Currently a work in progress
