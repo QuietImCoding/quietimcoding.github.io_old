@@ -2,4 +2,4 @@
 
 ## This is my personal website
 
-## Currently a work in progress
+Currently a work in progress
